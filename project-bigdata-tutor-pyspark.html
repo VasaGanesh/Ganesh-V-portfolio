@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesh V — BigData Tutor – PySpark Workflow Editor</title>
+  <meta name="description" content="Full-stack educational platform that converts natural-language instructions and visual workflows into PySpark code using an LLM assistant." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body class="page-fade">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">Ganesh V</a>
+    <nav class="nav-links">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="projects" href="projects.html">Projects</a>
+      <a data-nav="experience" href="experience.html">Experience</a>
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="contact" href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="breadcrumbs reveal">
+      <a href="projects.html">Projects</a> <span class="dot">•</span> <span>BigData Tutor – PySpark Workflow Editor</span>
+    </div>
+
+    <div class="project-hero card reveal">
+      <h1>BigData Tutor – PySpark Workflow Editor</h1>
+      <p class="muted">Full-stack educational platform that converts natural-language instructions and visual workflows into PySpark code using an LLM assistant.</p>
+      <div class="pill-row"><span class="pill">React</span><span class="pill">Flask</span><span class="pill">MongoDB</span><span class="pill">JWT</span><span class="pill">PySpark</span><span class="pill">LLM API Integration</span></div>
+
+      <div class="project-links">
+        <a class="btn primary" href="https://github.com/vganesh0509/Bigdata-Tutor-PySpark" target="_blank" rel="noreferrer">View GitHub Repo</a>
+        <a class="btn" href="projects.html">Back to Projects</a>
+      </div>
+    </div>
+
+    <div class="grid two">
+      <section class="card reveal">
+        <h2>Problem</h2>
+        <ul class="list"><li>PySpark has a steep learning curve: Spark concepts + Python syntax + transformation logic at once.</li><li>Beginners struggle translating data logic into correct, ordered PySpark code.</li></ul>
+      </section>
+
+      <section class="card reveal">
+        <h2>Solution</h2>
+        <ul class="list"><li>Users build workflows visually and describe steps in English.</li><li>The backend uses an LLM to generate ordered PySpark transformations aligned to workflow nodes.</li></ul>
+      </section>
+    </div>
+
+    <section class="card reveal">
+      <h2>Key Features</h2>
+      <ul class="list"><li>Drag-and-drop workflow builder</li><li>Natural language → ordered PySpark code generation</li><li>LLM-powered chatbot assistance</li><li>JWT authentication and MongoDB persistence</li><li>Clean separation between UI, API, AI layer, and storage</li></ul>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Screenshots</h2>
+      <div class="shots">
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/bigdata-home.jpg" alt="Homepage" data-caption="Homepage" loading="lazy"/>
+        <figcaption class="muted">Homepage</figcaption>
+      </figure>
+    
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/bigdata-login.jpg" alt="Login" data-caption="Login" loading="lazy"/>
+        <figcaption class="muted">Login</figcaption>
+      </figure>
+    
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/bigdata-workflow.jpg" alt="Workflow editor + chat" data-caption="Workflow editor + chat" loading="lazy"/>
+        <figcaption class="muted">Workflow editor + chat</figcaption>
+      </figure>
+    </div>
+      <p class="muted reveal" style="margin-top:10px;">Tip: Click any image to preview.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Technical Deep Dive</h2>
+      <div class="deep">
+      <div class="deep-item reveal">
+        <h3>Biggest challenge</h3>
+        <p class="muted">Translating ambiguous natural-language data processing instructions into logically correct, step-ordered PySpark code while keeping it understandable for beginners.</p>
+      </div>
+    
+      <div class="deep-item reveal">
+        <h3>Structured output</h3>
+        <p class="muted">Prompt constraints + workflow state align code generation to specific nodes in ordered steps.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Next Improvements</h2>
+      <ul class="list"><li>Execute workflows on a real Spark cluster</li><li>Instructor review and feedback features</li></ul>
+    </section>
+
+    <footer class="footer">
+      <p><a href="projects.html">← Back to Projects</a> <span class="dot">•</span> <a href="index.html">Home</a></p>
+    </footer>
+  </div>
+</main>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img class="lightbox-img" alt="Screenshot preview" />
+  <div class="lightbox-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesh V — AWS – Power Of Math</title>
+  <meta name="description" content="Serverless AWS app demonstrating Amplify + API Gateway + Lambda + DynamoDB integration to compute and persist results." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body class="page-fade">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">Ganesh V</a>
+    <nav class="nav-links">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="projects" href="projects.html">Projects</a>
+      <a data-nav="experience" href="experience.html">Experience</a>
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="contact" href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="breadcrumbs reveal">
+      <a href="projects.html">Projects</a> <span class="dot">•</span> <span>AWS – Power Of Math</span>
+    </div>
+
+    <div class="project-hero card reveal">
+      <h1>AWS – Power Of Math</h1>
+      <p class="muted">Serverless AWS app demonstrating Amplify + API Gateway + Lambda + DynamoDB integration to compute and persist results.</p>
+      <div class="pill-row"><span class="pill">AWS Amplify</span><span class="pill">API Gateway</span><span class="pill">AWS Lambda</span><span class="pill">DynamoDB</span><span class="pill">IAM</span><span class="pill">HTML/JS</span><span class="pill">Python</span></div>
+
+      <div class="project-links">
+        <a class="btn primary" href="https://github.com/VasaGanesh/AWS-PowerOfMath" target="_blank" rel="noreferrer">View GitHub Repo</a>
+        <a class="btn" href="projects.html">Back to Projects</a>
+      </div>
+    </div>
+
+    <div class="grid two">
+      <section class="card reveal">
+        <h2>Problem</h2>
+        <ul class="list"><li>Learners often understand AWS services individually but struggle to connect them into an end-to-end application.</li><li>IAM and request wiring are frequently missing in beginner projects.</li></ul>
+      </section>
+
+      <section class="card reveal">
+        <h2>Solution</h2>
+        <ul class="list"><li>Frontend takes base/exponent → API Gateway triggers Lambda → Lambda computes and stores result in DynamoDB → response shown to user.</li><li>Strict separation of responsibilities makes the flow predictable and easy to debug.</li></ul>
+      </section>
+    </div>
+
+    <section class="card reveal">
+      <h2>Key Features</h2>
+      <ul class="list"><li>Fully serverless request flow</li><li>Persistent storage in DynamoDB</li><li>IAM scoped permissions (avoid over-privilege)</li><li>Clean service separation: UI → routing → compute → persistence</li></ul>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Screenshots</h2>
+      <div class="shots">
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/aws-arch.png" alt="Serverless architecture diagram" data-caption="Serverless architecture diagram" loading="lazy"/>
+        <figcaption class="muted">Serverless architecture diagram</figcaption>
+      </figure>
+    </div>
+      <p class="muted reveal" style="margin-top:10px;">Tip: Click any image to preview.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Technical Deep Dive</h2>
+      <div class="deep">
+      <div class="deep-item reveal">
+        <h3>Biggest challenge</h3>
+        <p class="muted">Wiring the serverless request flow and configuring IAM so Lambda can write to DynamoDB securely without over-privileging access.</p>
+      </div>
+    
+      <div class="deep-item reveal">
+        <h3>Structured flow</h3>
+        <p class="muted">Clear separation of concerns across services ensures predictable execution and easy troubleshooting.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Next Improvements</h2>
+      <ul class="list"><li>Add input validation and robust error handling</li><li>Add monitoring and logging (CloudWatch metrics/alerts)</li></ul>
+    </section>
+
+    <footer class="footer">
+      <p><a href="projects.html">← Back to Projects</a> <span class="dot">•</span> <a href="index.html">Home</a></p>
+    </footer>
+  </div>
+</main>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img class="lightbox-img" alt="Screenshot preview" />
+  <div class="lightbox-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body></html>

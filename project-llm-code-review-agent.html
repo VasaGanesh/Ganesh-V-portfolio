@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ganesh V — LLM-Driven Code Review Agent</title>
+  <meta name="description" content="AI-powered web app that performs structured, explainable code reviews using Google Gemini to improve code quality, clarity, and performance." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" />
+</head>
+<body class="page-fade">
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html">Ganesh V</a>
+    <nav class="nav-links">
+      <a data-nav="home" href="index.html">Home</a>
+      <a data-nav="projects" href="projects.html">Projects</a>
+      <a data-nav="experience" href="experience.html">Experience</a>
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="contact" href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <div class="breadcrumbs reveal">
+      <a href="projects.html">Projects</a> <span class="dot">•</span> <span>LLM-Driven Code Review Agent</span>
+    </div>
+
+    <div class="project-hero card reveal">
+      <h1>LLM-Driven Code Review Agent</h1>
+      <p class="muted">AI-powered web app that performs structured, explainable code reviews using Google Gemini to improve code quality, clarity, and performance.</p>
+      <div class="pill-row"><span class="pill">React (Vite)</span><span class="pill">Node.js</span><span class="pill">Express</span><span class="pill">Gemini 2.0 Flash</span><span class="pill">Prompt Engineering</span></div>
+
+      <div class="project-links">
+        <a class="btn primary" href="https://github.com/VasaGanesh/LLM-Driven-Code-Review-Agent" target="_blank" rel="noreferrer">View GitHub Repo</a>
+        <a class="btn" href="projects.html">Back to Projects</a>
+      </div>
+    </div>
+
+    <div class="grid two">
+      <section class="card reveal">
+        <h2>Problem</h2>
+        <ul class="list"><li>Manual code reviews can be time-consuming, inconsistent, and dependent on reviewer availability.</li><li>Developers often don’t get clear explanations for why changes are needed, slowing learning and productivity.</li></ul>
+      </section>
+
+      <section class="card reveal">
+        <h2>Solution</h2>
+        <ul class="list"><li>A web-based service that accepts code, sends it to Gemini with a strict prompt, and returns sectioned review feedback.</li><li>Focuses on explainability and practical developer workflows (UI-friendly structured output).</li></ul>
+      </section>
+    </div>
+
+    <section class="card reveal">
+      <h2>Key Features</h2>
+      <ul class="list"><li>Automated code analysis using LLMs</li><li>Predictable sectioned output (Issues, Improvements, Optimizations, Explanation)</li><li>Multi-language support (Python, JavaScript, Java) and extensible design</li><li>Clean separation of frontend and backend; API-first architecture</li><li>Designed for future CI/CD + GitHub PR integration</li></ul>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Screenshots</h2>
+      <div class="shots">
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/llm-1.jpg" alt="Review output (structured feedback)" data-caption="Review output (structured feedback)" loading="lazy"/>
+        <figcaption class="muted">Review output (structured feedback)</figcaption>
+      </figure>
+    
+      <figure class="shot reveal">
+        <img class="clickable" src="assets/screenshots/llm-2.jpg" alt="Editor + review UI" data-caption="Editor + review UI" loading="lazy"/>
+        <figcaption class="muted">Editor + review UI</figcaption>
+      </figure>
+    </div>
+      <p class="muted reveal" style="margin-top:10px;">Tip: Click any image to preview.</p>
+    </section>
+
+    <section class="card">
+      <h2 class="reveal">Technical Deep Dive</h2>
+      <div class="deep">
+      <div class="deep-item reveal">
+        <h3>Biggest challenge</h3>
+        <p class="muted">Designing prompts that consistently produce structured, actionable code review feedback while avoiding hallucinated or unsafe suggestions across languages.</p>
+      </div>
+    
+      <div class="deep-item reveal">
+        <h3>Structured output</h3>
+        <p class="muted">Enforced fixed headings and explicit constraints in the prompt so the UI always renders predictable sections.</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Next Improvements</h2>
+      <ul class="list"><li>GitHub Pull Request integration for automated reviews on PRs</li><li>Scoring system for security / performance / readability</li></ul>
+    </section>
+
+    <footer class="footer">
+      <p><a href="projects.html">← Back to Projects</a> <span class="dot">•</span> <a href="index.html">Home</a></p>
+    </footer>
+  </div>
+</main>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close">×</button>
+  <img class="lightbox-img" alt="Screenshot preview" />
+  <div class="lightbox-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body></html>
