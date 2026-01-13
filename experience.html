@@ -27,47 +27,131 @@
   <div class="container">
     <div class="section-title">
       <h1 class="reveal">Experience</h1>
-      <p class="reveal">Industry experience with measurable impact across healthcare, enterprise, and financial systems.</p>
+      <p class="reveal">Project-focused experience across healthcare, enterprise AI, and financial systems (portfolio view).</p>
     </div>
 
     <div class="timeline">
-      
+
+      <!-- CVS HEALTH -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
-          <h2>Software Engineer — <span class="muted">Abridge</span></h2>
-          <div class="timeline-meta">San Jose, CA • Sep 2024 – Present</div>
+          <h2>AI Engineer — <span class="muted">CVS Health</span></h2>
+          <div class="timeline-meta">United States • Sep 2024 – Present</div>
         </div>
-        <ul class="list"><li>Built real-time delivery flows for ML-generated clinical summaries via REST + WebSockets (partial outputs, retries, ordering), reducing clinician review time by 22%.</li><li>Developed Node.js services to validate/version ML note outputs while maintaining ~0.2s average API response time.</li><li>Resolved transcript ingestion and schema drift issues, reducing missing/dropped transcript data by 40% and improving ML input/output reliability.</li></ul>
-        <div class="timeline-stack"><span class="muted">Tech:</span> React, Next.js, TypeScript, Node.js, PostgreSQL, Redis, WebSockets</div>
+
+        <ul class="list">
+          <li><b>Client/Product:</b> Internal AI agent support platform for call-center teams handling pharmacy benefits, coverage, and claim inquiries.</li>
+          <li><b>Project:</b> Intelligent Agent Assist System (RAG-Based LLM Platform)</li>
+          <li><b>Problem:</b> Agents relied on manual searches and fragmented tools for complex coverage/claim questions, causing slow response times and inconsistent answers.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
+        <ul class="list">
+          <li>RAG workflow in Python to generate policy-grounded answers from internal benefits and pharmacy documents.</li>
+          <li>Embedding-based retrieval using LangChain + OpenSearch vector search to return citation-backed context.</li>
+          <li>FastAPI service with confidence thresholds, citation enforcement, and execution guards for safe responses.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
+        <ul class="list">
+          <li>Improved call handling efficiency by <b>18%</b> by reducing agent search time and cognitive load.</li>
+          <li>Increased answer accuracy from <b>82% → 89%</b> through optimized chunking, embeddings, and prompt tuning.</li>
+          <li>Reduced unsupported responses by <b>52%</b> and cut end-to-end latency from <b>1.6s → 0.9s</b>.</li>
+        </ul>
+
+        <div class="timeline-stack"><span class="muted">Tech:</span> Python, LangChain, OpenSearch (Vector Search), Dense Embeddings, Prompt Engineering, FastAPI, AWS S3, In-Memory Caching, RAG</div>
       </section>
-      
+
+      <!-- HEXAGON -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
           <h2>Software Developer — <span class="muted">Hexagon Capability Center</span></h2>
-          <div class="timeline-meta">India • Oct 2022 – Nov 2023</div>
+          <div class="timeline-meta">Hyderabad, India • Oct 2022 – Nov 2023</div>
         </div>
-        <ul class="list"><li>Developed Spring Boot microservices (Java 17) for large-scale 3D engineering data aggregation.</li><li>Implemented REST + GraphQL APIs, improving API throughput by 28%; optimized Azure SQL to reduce query latency by 40%.</li><li>Automated CI/CD to AKS, reducing deployment time by 45%.</li></ul>
-        <div class="timeline-stack"><span class="muted">Tech:</span> Java 17, Spring Boot, Azure SQL, Docker, Kubernetes (AKS), CI/CD</div>
+
+        <ul class="list">
+          <li><b>Client/Product:</b> Industrial asset monitoring and predictive maintenance systems using IoT sensor telemetry.</li>
+          <li><b>Project:</b> AI-Driven Asset Anomaly Detection Platform</li>
+          <li><b>Problem:</b> Rule-based monitoring detected failures late, leading to downtime, inefficient maintenance, and higher operational costs.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
+        <ul class="list">
+          <li>Architected an anomaly detection platform to identify early signs of equipment failure from time-series sensor data.</li>
+          <li>Built preprocessing, feature engineering, and inference pipelines in Python to analyze high-volume telemetry at scale.</li>
+          <li>Deployed near-real-time inference services via REST APIs and integrated anomaly results into downstream asset systems.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
+        <ul class="list">
+          <li>Processed ~<b>60K</b> sensor records/day and improved anomaly signal quality by <b>15%</b>.</li>
+          <li>Achieved <b>76%</b> precision detecting abnormal equipment behavior using time-series ML models.</li>
+          <li>Reduced false-positive alerts by <b>12%</b> with sub-<b>1.2s</b> end-to-end scoring latency.</li>
+        </ul>
+
+        <div class="timeline-stack"><span class="muted">Tech:</span> Python, TensorFlow, scikit-learn, Pandas, REST APIs, PostgreSQL, Batch Scheduling, Model Monitoring, Drift Detection</div>
       </section>
-      
+
+      <!-- OPENTEXT -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
           <h2>Software Engineer — <span class="muted">OpenText</span></h2>
-          <div class="timeline-meta">India • Mar 2022 – Sep 2022</div>
+          <div class="timeline-meta">Hyderabad, India • Mar 2022 – Sep 2022</div>
         </div>
-        <ul class="list"><li>Built Spring Boot services for document upload/metadata/versioning, reducing API failures by 25%.</li><li>Implemented full-text search with pagination/ranking, reducing search latency by 30%.</li></ul>
-        <div class="timeline-stack"><span class="muted">Tech:</span> Java, Spring Boot, Oracle SQL, React, Docker</div>
+
+        <ul class="list">
+          <li><b>Client/Product:</b> Internal document intelligence and enterprise knowledge retrieval platform used by engineering and support teams.</li>
+          <li><b>Project:</b> Retrieval-Augmented Document Intelligence System</li>
+          <li><b>Problem:</b> Teams struggled to retrieve accurate information from large enterprise document repositories, resulting in low relevance and inconsistent answers.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
+        <ul class="list">
+          <li>Contributed to a retrieval platform processing <b>1.2M+</b> enterprise documents to improve internal knowledge access.</li>
+          <li>Enhanced vector retrieval and ranking pipelines using PostgreSQL vector search and embedding strategies.</li>
+          <li>Built prompt templates and NLP segmentation to improve contextual accuracy and response consistency.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
+        <ul class="list">
+          <li>Reduced irrelevant retrieval responses by <b>25%</b> and improved retrieval latency by <b>18%</b>.</li>
+          <li>Improved context matching by <b>22%</b> while reducing noisy snippets by <b>30%</b>.</li>
+          <li>Reduced release turnaround from <b>3 days → under 3 hours</b> using CI/CD automation.</li>
+        </ul>
+
+        <div class="timeline-stack"><span class="muted">Tech:</span> Python, LangChain, LlamaIndex, PostgreSQL (Vector Search), scikit-learn, PyTorch, FastAPI, Prompt Engineering, NLP Pipelines, GitHub Actions</div>
       </section>
-      
+
+      <!-- FINASTRA -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
-          <h2>Software Engineer — <span class="muted">Finastra</span></h2>
-          <div class="timeline-meta">India • Jun 2021 – Feb 2022</div>
+          <h2>Python Developer — <span class="muted">Finastra</span></h2>
+          <div class="timeline-meta">Pune, India • Jun 2021 – Feb 2022</div>
         </div>
-        <ul class="list"><li>Developed financial services APIs for loan origination/payment processing, reducing API response times by 25%.</li><li>Debugged core banking defects and enforced business rules, increasing stability by 30%.</li></ul>
-        <div class="timeline-stack"><span class="muted">Tech:</span> Java, Spring Boot, Oracle SQL, Docker</div>
+
+        <ul class="list">
+          <li><b>Client/Product:</b> Fusion Payments Insight — payment processing and compliance platform supporting real-time transaction validation and regulatory checks.</li>
+          <li><b>Project:</b> Backend Modernization & ML-Assisted Compliance</li>
+          <li><b>Problem:</b> Azure migration required improved API reliability, secure access control, and scalable validation workflows under strict compliance and uptime requirements.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
+        <ul class="list">
+          <li>Developed FastAPI payment validation APIs and ML-assisted workflows to reduce manual compliance checks.</li>
+          <li>Implemented OAuth 2.0 + JWT authentication using Authlib across distributed services.</li>
+          <li>Built async background processing using AsyncIO and deployed microservices to AKS using Docker + Helm.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
+        <ul class="list">
+          <li>Increased API uptime by <b>14%</b> and reduced minor API failures by <b>15%</b>.</li>
+          <li>Improved peak-hour throughput by <b>31%</b> and reduced manual payment review steps by <b>20%</b>.</li>
+          <li>Cut deployment failures by <b>28%</b> and saved <b>8–10</b> engineering hours/week via CI/CD automation.</li>
+        </ul>
+
+        <div class="timeline-stack"><span class="muted">Tech:</span> Python, FastAPI, LangChain, Authlib, AsyncIO, PostgreSQL, Docker, Helm, AKS, GitHub Actions, OAuth 2.0, JWT</div>
       </section>
-      
+
     </div>
 
     <div class="card reveal">
@@ -82,4 +166,5 @@
 </main>
 
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
