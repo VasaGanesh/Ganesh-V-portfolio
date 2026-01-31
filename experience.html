@@ -27,39 +27,75 @@
   <div class="container">
     <div class="section-title">
       <h1 class="reveal">Experience</h1>
-      <p class="reveal">Project-focused experience across healthcare, enterprise AI, and financial systems (portfolio view).</p>
+      <p class="reveal">Portfolio-style experience showing client context, project ownership, and measurable outcomes.</p>
     </div>
 
     <div class="timeline">
 
-      <!-- CVS HEALTH -->
+      <!-- U.S. BANK -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
-          <h2>AI Engineer — <span class="muted">CVS Health</span></h2>
-          <div class="timeline-meta">United States • Sep 2024 – Present</div>
+          <h2>Software Engineer — <span class="muted">U.S. Bank</span></h2>
+          <div class="timeline-meta">Charlotte, NC • Jun 2025 – Present</div>
         </div>
 
         <ul class="list">
-          <li><b>Client/Product:</b> Internal AI agent support platform for call-center teams handling pharmacy benefits, coverage, and claim inquiries.</li>
-          <li><b>Project:</b> Intelligent Agent Assist System (RAG-Based LLM Platform)</li>
-          <li><b>Problem:</b> Agents relied on manual searches and fragmented tools for complex coverage/claim questions, causing slow response times and inconsistent answers.</li>
+          <li><b>Client/Product:</b> Real-Time Payments Platform</li>
+          <li><b>Project:</b> Real-time payment orchestration and processing system for high-volume financial transactions.</li>
+          <li><b>Problem:</b> The platform needed to process millions of payments daily with low latency, strong consistency, and clear auditability, while safely handling retries, failures, and asynchronous settlement across distributed services.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
         <ul class="list">
-          <li>RAG workflow in Python to generate policy-grounded answers from internal benefits and pharmacy documents.</li>
-          <li>Embedding-based retrieval using LangChain + OpenSearch vector search to return citation-backed context.</li>
-          <li>FastAPI service with confidence thresholds, citation enforcement, and execution guards for safe responses.</li>
+          <li>Designed a payment orchestration layer to manage initiation, routing, authorization, settlement, and retries using deterministic state transitions.</li>
+          <li>Implemented event-driven payment processing using Kafka to decouple services, handle failures safely, and reduce end-to-end latency.</li>
+          <li>Built audit-ready data models and validation with optimized PostgreSQL schemas and WireMock-based integration testing across external clearing systems.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
         <ul class="list">
-          <li>Improved call handling efficiency by <b>18%</b> by reducing agent search time and cognitive load.</li>
-          <li>Increased answer accuracy from <b>82% → 89%</b> through optimized chunking, embeddings, and prompt tuning.</li>
-          <li>Reduced unsupported responses by <b>52%</b> and cut end-to-end latency from <b>1.6s → 0.9s</b>.</li>
+          <li>Processed ~<b>2.5M</b> transactions/day with strong consistency guarantees.</li>
+          <li>Reduced payment latency by <b>38%</b> through asynchronous processing.</li>
+          <li>Improved audit/exception reporting performance by <b>41%</b> and reduced production defects by <b>32%</b>.</li>
         </ul>
 
-        <div class="timeline-stack"><span class="muted">Tech:</span> Python, LangChain, OpenSearch (Vector Search), Dense Embeddings, Prompt Engineering, FastAPI, AWS S3, In-Memory Caching, RAG</div>
+        <div class="timeline-stack">
+          <span class="muted">Tech:</span>
+          Java, Spring Boot, Python, REST APIs, AWS, Apache Kafka, PostgreSQL, Docker, Kubernetes, Linux, WireMock, OpenAI GPT-4 (Azure OpenAI), LangChain, PyTorch
+        </div>
+      </section>
+
+      <!-- UNC CHARLOTTE -->
+      <section class="card reveal timeline-item">
+        <div class="timeline-head">
+          <h2>Application Engineer — <span class="muted">University of North Carolina at Charlotte</span></h2>
+          <div class="timeline-meta">Charlotte, NC • Sep 2024 – May 2025</div>
+        </div>
+
+        <ul class="list">
+          <li><b>Client/Product:</b> Data Engineering & Workflow Automation</li>
+          <li><b>Project:</b> Visual and natural-language driven PySpark workflow automation platform.</li>
+          <li><b>Problem:</b> Data engineers spent excessive time writing Spark code, configuring pipelines, and debugging invalid workflows, slowing onboarding and increasing job failures.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
+        <ul class="list">
+          <li>Created a visual DAG-based workflow builder enabling PySpark pipeline design via drag-and-drop nodes instead of manual coding.</li>
+          <li>Built an orchestration engine to validate DAG structure and convert workflows into ordered, executable PySpark execution plans.</li>
+          <li>Integrated LLM-assisted code generation/review to generate and refine deterministic PySpark code from visual or English inputs before execution.</li>
+        </ul>
+
+        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
+        <ul class="list">
+          <li>Reduced Spark job setup time by <b>75%</b>.</li>
+          <li>Decreased manual pipeline configuration effort by <b>40%</b>.</li>
+          <li>Lowered failed job submissions by <b>30%</b> through pre-execution validation.</li>
+        </ul>
+
+        <div class="timeline-stack">
+          <span class="muted">Tech:</span>
+          React, Flask, MongoDB, PySpark, Google Gemini LLM API, REST APIs, JWT, pytest, Postman
+        </div>
       </section>
 
       <!-- HEXAGON -->
@@ -70,86 +106,62 @@
         </div>
 
         <ul class="list">
-          <li><b>Client/Product:</b> Industrial asset monitoring and predictive maintenance systems using IoT sensor telemetry.</li>
-          <li><b>Project:</b> AI-Driven Asset Anomaly Detection Platform</li>
-          <li><b>Problem:</b> Rule-based monitoring detected failures late, leading to downtime, inefficient maintenance, and higher operational costs.</li>
+          <li><b>Client/Product:</b> Engineering Design & Visualization Platforms</li>
+          <li><b>Project:</b> Event-driven asset synchronization and real-time visualization platform.</li>
+          <li><b>Problem:</b> Engineering teams needed consistent near real-time views of assets/models across multiple applications while supporting concurrent users and high-throughput visualization workloads.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
         <ul class="list">
-          <li>Architected an anomaly detection platform to identify early signs of equipment failure from time-series sensor data.</li>
-          <li>Built preprocessing, feature engineering, and inference pipelines in Python to analyze high-volume telemetry at scale.</li>
-          <li>Deployed near-real-time inference services via REST APIs and integrated anomaly results into downstream asset systems.</li>
+          <li>Developed an event-driven synchronization platform to propagate asset and metadata changes reliably across engineering systems.</li>
+          <li>Built high-throughput backend APIs optimized for large geometry and asset payloads in visualization workflows.</li>
+          <li>Delivered real-time visualization support with optimized services, database models, and Angular dashboards for concurrent users.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
         <ul class="list">
-          <li>Processed ~<b>60K</b> sensor records/day and improved anomaly signal quality by <b>15%</b>.</li>
-          <li>Achieved <b>76%</b> precision detecting abnormal equipment behavior using time-series ML models.</li>
-          <li>Reduced false-positive alerts by <b>12%</b> with sub-<b>1.2s</b> end-to-end scoring latency.</li>
+          <li>Enabled near real-time asset synchronization across applications.</li>
+          <li>Improved API throughput by <b>28%</b> and reduced user interaction latency by <b>35%</b>.</li>
+          <li>Reduced stale data during concurrent sessions by <b>34%</b>.</li>
         </ul>
 
-        <div class="timeline-stack"><span class="muted">Tech:</span> Python, TensorFlow, scikit-learn, Pandas, REST APIs, PostgreSQL, Batch Scheduling, Model Monitoring, Drift Detection</div>
-      </section>
-
-      <!-- OPENTEXT -->
-      <section class="card reveal timeline-item">
-        <div class="timeline-head">
-          <h2>Software Engineer — <span class="muted">OpenText</span></h2>
-          <div class="timeline-meta">Hyderabad, India • Mar 2022 – Sep 2022</div>
+        <div class="timeline-stack">
+          <span class="muted">Tech:</span>
+          Java 17, Spring Boot, REST APIs, Apache Kafka, Angular, TypeScript, Oracle Database, Docker, Azure AKS, Git
         </div>
-
-        <ul class="list">
-          <li><b>Client/Product:</b> Internal document intelligence and enterprise knowledge retrieval platform used by engineering and support teams.</li>
-          <li><b>Project:</b> Retrieval-Augmented Document Intelligence System</li>
-          <li><b>Problem:</b> Teams struggled to retrieve accurate information from large enterprise document repositories, resulting in low relevance and inconsistent answers.</li>
-        </ul>
-
-        <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
-        <ul class="list">
-          <li>Contributed to a retrieval platform processing <b>1.2M+</b> enterprise documents to improve internal knowledge access.</li>
-          <li>Enhanced vector retrieval and ranking pipelines using PostgreSQL vector search and embedding strategies.</li>
-          <li>Built prompt templates and NLP segmentation to improve contextual accuracy and response consistency.</li>
-        </ul>
-
-        <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
-        <ul class="list">
-          <li>Reduced irrelevant retrieval responses by <b>25%</b> and improved retrieval latency by <b>18%</b>.</li>
-          <li>Improved context matching by <b>22%</b> while reducing noisy snippets by <b>30%</b>.</li>
-          <li>Reduced release turnaround from <b>3 days → under 3 hours</b> using CI/CD automation.</li>
-        </ul>
-
-        <div class="timeline-stack"><span class="muted">Tech:</span> Python, LangChain, LlamaIndex, PostgreSQL (Vector Search), scikit-learn, PyTorch, FastAPI, Prompt Engineering, NLP Pipelines, GitHub Actions</div>
       </section>
 
       <!-- FINASTRA -->
       <section class="card reveal timeline-item">
         <div class="timeline-head">
-          <h2>Python Developer — <span class="muted">Finastra</span></h2>
-          <div class="timeline-meta">Pune, India • Jun 2021 – Feb 2022</div>
+          <h2>Software Engineer — <span class="muted">Finastra</span></h2>
+          <div class="timeline-meta">Pune, India • Jun 2021 – Sep 2022</div>
         </div>
 
         <ul class="list">
-          <li><b>Client/Product:</b> Fusion Payments Insight — payment processing and compliance platform supporting real-time transaction validation and regulatory checks.</li>
-          <li><b>Project:</b> Backend Modernization & ML-Assisted Compliance</li>
-          <li><b>Problem:</b> Azure migration required improved API reliability, secure access control, and scalable validation workflows under strict compliance and uptime requirements.</li>
+          <li><b>Client/Product:</b> Banking & Payments Systems</li>
+          <li><b>Project:</b> Internal bank transfer and payment lifecycle tracking service.</li>
+          <li><b>Problem:</b> Banking systems lacked real-time visibility into authorization, settlement, and failure states, causing delayed reconciliation and inefficient downstream processing.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>What I Built</b></div>
         <ul class="list">
-          <li>Developed FastAPI payment validation APIs and ML-assisted workflows to reduce manual compliance checks.</li>
-          <li>Implemented OAuth 2.0 + JWT authentication using Authlib across distributed services.</li>
-          <li>Built async background processing using AsyncIO and deployed microservices to AKS using Docker + Helm.</li>
+          <li>Implemented a payment lifecycle tracking service modeling authorization, settlement, and failure states for internal transfers.</li>
+          <li>Designed event-based transaction propagation so downstream systems receive real-time updates instead of polling databases.</li>
+          <li>Optimized reconciliation and audit workflows by reducing database round trips and tuning PostgreSQL queries and indexes.</li>
         </ul>
 
         <div class="muted" style="margin-top:10px;"><b>Impact</b></div>
         <ul class="list">
-          <li>Increased API uptime by <b>14%</b> and reduced minor API failures by <b>15%</b>.</li>
-          <li>Improved peak-hour throughput by <b>31%</b> and reduced manual payment review steps by <b>20%</b>.</li>
-          <li>Cut deployment failures by <b>28%</b> and saved <b>8–10</b> engineering hours/week via CI/CD automation.</li>
+          <li>Improved transaction throughput by <b>20%</b>.</li>
+          <li>Reduced reconciliation query latency by <b>25%</b>.</li>
+          <li>Enabled real-time transaction status visibility for downstream systems.</li>
         </ul>
 
-        <div class="timeline-stack"><span class="muted">Tech:</span> Python, FastAPI, LangChain, Authlib, AsyncIO, PostgreSQL, Docker, Helm, AKS, GitHub Actions, OAuth 2.0, JWT</div>
+        <div class="timeline-stack">
+          <span class="muted">Tech:</span>
+          Java, Spring Boot, REST APIs, Apache Kafka, PostgreSQL, Docker, Kubernetes, Event-Driven Architecture
+        </div>
       </section>
 
     </div>
